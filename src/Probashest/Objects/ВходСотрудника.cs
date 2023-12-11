@@ -32,7 +32,6 @@ namespace IIS.Probashest
     [View("ВходСотрудникаE", new string[] {
             "Сотрудник as \'Сотрудник\'",
             "Сотрудник.ФИО as \'ФИО\'",
-            "Сотрудник.Должности as \'Должность\'",
             "Сотрудник.Должности.Должность"}, Hidden=new string[] {
             "Сотрудник.ФИО"})]
     [MasterViewDefineAttribute("ВходСотрудникаE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]

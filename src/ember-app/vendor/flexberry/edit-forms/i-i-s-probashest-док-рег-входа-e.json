@@ -25,12 +25,12 @@
       "detailModelName": "i-i-s-probashest-вход-гостя"
     },
     {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
+      "master": "сотрудник",
+      "displayAttributeName": "фИО",
+      "required": true,
       "relationName": "ВходСотрудника.Сотрудник",
       "projection": "СотрудникL",
-      "detailModelName": null
+      "detailModelName": "i-i-s-probashest-вход-сотрудника"
     }
   ],
   "external": false,
