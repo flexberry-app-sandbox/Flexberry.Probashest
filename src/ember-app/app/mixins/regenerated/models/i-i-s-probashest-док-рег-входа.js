@@ -45,7 +45,7 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ДокРегВходаE', 'i-i-s-probashest-док-рег-входа', {
     дата: attr('Дата', { index: 0 }),
-    комнаты: belongsTo('i-i-s-probashest-комнаты', 'Комнаты', {
+    комнаты: belongsTo('i-i-s-probashest-комнаты', 'Комната', {
       номер: attr('Номер', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'номер' }),
     входГостя: hasMany('i-i-s-probashest-вход-гостя', 'Вход гостя', {

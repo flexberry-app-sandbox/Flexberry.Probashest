@@ -31,7 +31,7 @@ namespace IIS.Probashest
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ДокРегВходаE", new string[] {
             "Дата as \'Дата\'",
-            "Комнаты as \'Комнаты\'",
+            "Комнаты as \'Комната\'",
             "Комнаты.Номер as \'Номер\'"}, Hidden=new string[] {
             "Комнаты.Номер"})]
     [AssociatedDetailViewAttribute("ДокРегВходаE", "ВходГостя", "ВходГостяE", true, "", "Вход гостя", true, new string[] {

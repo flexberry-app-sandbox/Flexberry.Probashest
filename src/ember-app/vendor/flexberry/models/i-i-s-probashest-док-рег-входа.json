@@ -66,7 +66,7 @@
           ],
           "index": 1,
           "type": "standard",
-          "caption": "Комнаты",
+          "caption": "Комната",
           "name": "комнаты",
           "relatedTo": "i-i-s-probashest-комнаты",
           "inverse": null
