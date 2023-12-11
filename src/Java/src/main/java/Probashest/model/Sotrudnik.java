@@ -29,8 +29,8 @@ public class Sotrudnik {
     @Column(name = "ДатаРождения")
     private Date датарождения;
 
-    @Column(name = "СерНомПаспорта")
-    private Integer серномпаспорта;
+    @Column(name = "ДанныеПаспорта")
+    private Integer данныепаспорта;
 
     @Column(name = "Телефон")
     private Integer телефон;
@@ -74,12 +74,12 @@ public class Sotrudnik {
       this.датарождения = датарождения;
     }
 
-    public Integer getСерНомПаспорта() {
-      return серномпаспорта;
+    public Integer getДанныеПаспорта() {
+      return данныепаспорта;
     }
 
-    public void setСерНомПаспорта(Integer серномпаспорта) {
-      this.серномпаспорта = серномпаспорта;
+    public void setДанныеПаспорта(Integer данныепаспорта) {
+      this.данныепаспорта = данныепаспорта;
     }
 
     public Integer getТелефон() {

@@ -33,7 +33,7 @@ namespace IIS.Probashest
             "Должности as \'Должности\'",
             "Должности.Должность as \'Должность\'",
             "ДатаРождения as \'Дата рождения\'",
-            "СерНомПаспорта as \'Сер ном паспорта\'",
+            "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'"}, Hidden=new string[] {
             "Должности.Должность"})]
     [MasterViewDefineAttribute("СотрудникE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Должность")]
@@ -41,7 +41,7 @@ namespace IIS.Probashest
             "ФИО as \'ФИО\'",
             "Должности.Должность as \'Должность\'",
             "ДатаРождения as \'Дата рождения\'",
-            "СерНомПаспорта as \'Сер ном паспорта\'",
+            "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'"})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject
     {
@@ -50,7 +50,7 @@ namespace IIS.Probashest
         
         private System.DateTime fДатаРождения;
         
-        private int fСерНомПаспорта;
+        private int fДанныеПаспорта;
         
         private int fТелефон;
         
@@ -60,6 +60,37 @@ namespace IIS.Probashest
 
         // *** End programmer edit section *** (Сотрудник CustomMembers)
 
+        
+        /// <summary>
+        /// ДанныеПаспорта.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.ДанныеПаспорта CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.ДанныеПаспорта CustomAttributes)
+        public virtual int ДанныеПаспорта
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.ДанныеПаспорта Get start)
+
+                // *** End programmer edit section *** (Сотрудник.ДанныеПаспорта Get start)
+                int result = this.fДанныеПаспорта;
+                // *** Start programmer edit section *** (Сотрудник.ДанныеПаспорта Get end)
+
+                // *** End programmer edit section *** (Сотрудник.ДанныеПаспорта Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.ДанныеПаспорта Set start)
+
+                // *** End programmer edit section *** (Сотрудник.ДанныеПаспорта Set start)
+                this.fДанныеПаспорта = value;
+                // *** Start programmer edit section *** (Сотрудник.ДанныеПаспорта Set end)
+
+                // *** End programmer edit section *** (Сотрудник.ДанныеПаспорта Set end)
+            }
+        }
         
         /// <summary>
         /// ДатаРождения.
@@ -89,37 +120,6 @@ namespace IIS.Probashest
                 // *** Start programmer edit section *** (Сотрудник.ДатаРождения Set end)
 
                 // *** End programmer edit section *** (Сотрудник.ДатаРождения Set end)
-            }
-        }
-        
-        /// <summary>
-        /// СерНомПаспорта.
-        /// </summary>
-        // *** Start programmer edit section *** (Сотрудник.СерНомПаспорта CustomAttributes)
-
-        // *** End programmer edit section *** (Сотрудник.СерНомПаспорта CustomAttributes)
-        public virtual int СерНомПаспорта
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Сотрудник.СерНомПаспорта Get start)
-
-                // *** End programmer edit section *** (Сотрудник.СерНомПаспорта Get start)
-                int result = this.fСерНомПаспорта;
-                // *** Start programmer edit section *** (Сотрудник.СерНомПаспорта Get end)
-
-                // *** End programmer edit section *** (Сотрудник.СерНомПаспорта Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Сотрудник.СерНомПаспорта Set start)
-
-                // *** End programmer edit section *** (Сотрудник.СерНомПаспорта Set start)
-                this.fСерНомПаспорта = value;
-                // *** Start programmer edit section *** (Сотрудник.СерНомПаспорта Set end)
-
-                // *** End programmer edit section *** (Сотрудник.СерНомПаспорта Set end)
             }
         }
         

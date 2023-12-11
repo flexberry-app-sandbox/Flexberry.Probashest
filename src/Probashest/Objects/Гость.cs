@@ -31,23 +31,23 @@ namespace IIS.Probashest
     [View("ГостьE", new string[] {
             "ФИО as \'ФИО\'",
             "ДатаРождения as \'Дата рождения\'",
-            "СерНомПаспорта as \'Сер ном паспорта\'",
+            "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'",
             "Почта as \'Почта\'"})]
     [View("ГостьL", new string[] {
             "ФИО as \'ФИО\'",
             "ДатаРождения as \'Дата рождения\'",
-            "СерНомПаспорта as \'Сер ном паспорта\'",
+            "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'",
             "Почта as \'Почта\'"})]
     public class Гость : ICSSoft.STORMNET.DataObject
     {
         
+        private int fДанныеПаспорта;
+        
         private string fФИО;
         
         private System.DateTime fДатаРождения;
-        
-        private int fСерНомПаспорта;
         
         private int fТелефон;
         
@@ -57,6 +57,37 @@ namespace IIS.Probashest
 
         // *** End programmer edit section *** (Гость CustomMembers)
 
+        
+        /// <summary>
+        /// ДанныеПаспорта.
+        /// </summary>
+        // *** Start programmer edit section *** (Гость.ДанныеПаспорта CustomAttributes)
+
+        // *** End programmer edit section *** (Гость.ДанныеПаспорта CustomAttributes)
+        public virtual int ДанныеПаспорта
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Гость.ДанныеПаспорта Get start)
+
+                // *** End programmer edit section *** (Гость.ДанныеПаспорта Get start)
+                int result = this.fДанныеПаспорта;
+                // *** Start programmer edit section *** (Гость.ДанныеПаспорта Get end)
+
+                // *** End programmer edit section *** (Гость.ДанныеПаспорта Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Гость.ДанныеПаспорта Set start)
+
+                // *** End programmer edit section *** (Гость.ДанныеПаспорта Set start)
+                this.fДанныеПаспорта = value;
+                // *** Start programmer edit section *** (Гость.ДанныеПаспорта Set end)
+
+                // *** End programmer edit section *** (Гость.ДанныеПаспорта Set end)
+            }
+        }
         
         /// <summary>
         /// ДатаРождения.
@@ -118,37 +149,6 @@ namespace IIS.Probashest
                 // *** Start programmer edit section *** (Гость.Почта Set end)
 
                 // *** End programmer edit section *** (Гость.Почта Set end)
-            }
-        }
-        
-        /// <summary>
-        /// СерНомПаспорта.
-        /// </summary>
-        // *** Start programmer edit section *** (Гость.СерНомПаспорта CustomAttributes)
-
-        // *** End programmer edit section *** (Гость.СерНомПаспорта CustomAttributes)
-        public virtual int СерНомПаспорта
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Гость.СерНомПаспорта Get start)
-
-                // *** End programmer edit section *** (Гость.СерНомПаспорта Get start)
-                int result = this.fСерНомПаспорта;
-                // *** Start programmer edit section *** (Гость.СерНомПаспорта Get end)
-
-                // *** End programmer edit section *** (Гость.СерНомПаспорта Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Гость.СерНомПаспорта Set start)
-
-                // *** End programmer edit section *** (Гость.СерНомПаспорта Set start)
-                this.fСерНомПаспорта = value;
-                // *** Start programmer edit section *** (Гость.СерНомПаспорта Set end)
-
-                // *** End programmer edit section *** (Гость.СерНомПаспорта Set end)
             }
         }
         

@@ -104,38 +104,6 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
-        probashest: {
-          caption: 'Probashest',
-          title: 'Probashest',
-          'i-i-s-probashest-сотрудник-l': {
-            caption: 'Сотрудник',
-            title: ''
-          },
-          'i-i-s-probashest-карты-l': {
-            caption: 'Карты',
-            title: ''
-          },
-          'i-i-s-probashest-комнаты-l': {
-            caption: 'Комнаты',
-            title: ''
-          },
-          'i-i-s-probashest-док-регист-карты-l': {
-            caption: 'Док регист карты',
-            title: ''
-          },
-          'i-i-s-probashest-док-рег-входа-l': {
-            caption: 'Док рег входа',
-            title: ''
-          },
-          'i-i-s-probashest-должности-l': {
-            caption: 'Должности',
-            title: ''
-          },
-          'i-i-s-probashest-гость-l': {
-            caption: 'Гость',
-            title: ''
-          }
-        },
         клиенты: {
           caption: 'Клиенты',
           title: 'Клиенты',
@@ -174,6 +142,38 @@ $.extend(true, translations, {
               caption: 'ДокРегистКартыL',
               title: 'Док регист карты'
             }
+          }
+        },
+        probashest: {
+          caption: 'Probashest',
+          title: 'Probashest',
+          'i-i-s-probashest-сотрудник-l': {
+            caption: 'Сотрудник',
+            title: ''
+          },
+          'i-i-s-probashest-карты-l': {
+            caption: 'Карты',
+            title: ''
+          },
+          'i-i-s-probashest-комнаты-l': {
+            caption: 'Комнаты',
+            title: ''
+          },
+          'i-i-s-probashest-док-регист-карты-l': {
+            caption: 'Док регист карты',
+            title: ''
+          },
+          'i-i-s-probashest-док-рег-входа-l': {
+            caption: 'Док рег входа',
+            title: ''
+          },
+          'i-i-s-probashest-должности-l': {
+            caption: 'Должности',
+            title: ''
+          },
+          'i-i-s-probashest-гость-l': {
+            caption: 'Гость',
+            title: ''
           }
         }
       }

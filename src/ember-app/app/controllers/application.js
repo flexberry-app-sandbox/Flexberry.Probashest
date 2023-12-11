@@ -22,61 +22,13 @@ export default Controller.extend({
         }, {
           link: null,
           icon: 'list',
-          caption: i18n.t('forms.application.sitemap.probashest.caption'),
-          title: i18n.t('forms.application.sitemap.probashest.title'),
-          children: [{
-            link: 'i-i-s-probashest-сотрудник-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-сотрудник-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-сотрудник-l.title'),
-            icon: 'chart bar',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-карты-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-карты-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-карты-l.title'),
-            icon: 'building',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-комнаты-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-комнаты-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-комнаты-l.title'),
-            icon: 'chart line',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-док-регист-карты-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-док-регист-карты-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-док-регист-карты-l.title'),
-            icon: 'building',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-док-рег-входа-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-док-рег-входа-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-док-рег-входа-l.title'),
-            icon: 'paperclip',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-должности-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-должности-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-должности-l.title'),
-            icon: 'building',
-            children: null
-          }, {
-            link: 'i-i-s-probashest-гость-l',
-            caption: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-гость-l.caption'),
-            title: i18n.t('forms.application.sitemap.probashest.i-i-s-probashest-гость-l.title'),
-            icon: 'folder',
-            children: null
-          }]
-        }, {
-          link: null,
-          icon: 'list',
           caption: i18n.t('forms.application.sitemap.клиенты.caption'),
           title: i18n.t('forms.application.sitemap.клиенты.title'),
           children: [{
             link: 'i-i-s-probashest-гость-l',
             caption: i18n.t('forms.application.sitemap.клиенты.i-i-s-probashest-гость-l.caption'),
             title: i18n.t('forms.application.sitemap.клиенты.i-i-s-probashest-гость-l.title'),
-            icon: 'list',
+            icon: 'chart bar',
             children: null
           }]
         }, {
@@ -88,23 +40,24 @@ export default Controller.extend({
             link: 'i-i-s-probashest-карты-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-карты-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-карты-l.title'),
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-probashest-должности-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-должности-l.title'),
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-probashest-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-сотрудник-l.title'),
-            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-probashest-комнаты-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-комнаты-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-комнаты-l.title'),
-            icon: 'table',
+            icon: 'edit',
             children: null
           }, {
             link: null,
@@ -114,13 +67,13 @@ export default Controller.extend({
               link: 'i-i-s-probashest-док-рег-входа-l',
               caption: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-рег-входа-l.caption'),
               title: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-рег-входа-l.title'),
-              icon: 'tags',
+              icon: 'address card',
               children: null
             }, {
               link: 'i-i-s-probashest-док-регист-карты-l',
               caption: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-регист-карты-l.caption'),
               title: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-регист-карты-l.title'),
-              icon: 'folder open',
+              icon: 'table',
               children: null
             }]
           }]

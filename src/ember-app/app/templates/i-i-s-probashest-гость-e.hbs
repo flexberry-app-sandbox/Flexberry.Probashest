@@ -48,12 +48,12 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.серНомПаспорта
-      class=(if (v-get validationModel "серНомПаспорта" "isInvalid") "error")
-      label=(t "forms.i-i-s-probashest-гость-e.серНомПаспорта-caption")
-      data-test-i-i-s-probashest-гость-e-серНомПаспорта=true
+      value=model.данныеПаспорта
+      class=(if (v-get validationModel "данныеПаспорта" "isInvalid") "error")
+      label=(t "forms.i-i-s-probashest-гость-e.данныеПаспорта-caption")
+      data-test-i-i-s-probashest-гость-e-данныеПаспорта=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "серНомПаспорта" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "данныеПаспорта" "message")}}
   </div>
   <div class="field">
     {{flexberry-field

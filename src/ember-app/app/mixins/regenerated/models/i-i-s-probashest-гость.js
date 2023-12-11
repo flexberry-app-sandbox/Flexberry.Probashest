@@ -5,14 +5,21 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
+  данныеПаспорта: DS.attr('number'),
   датаРождения: DS.attr('date'),
   почта: DS.attr('string'),
-  серНомПаспорта: DS.attr('number'),
   телефон: DS.attr('number'),
   фИО: DS.attr('string')
 });
 
 export let ValidationRules = {
+  данныеПаспорта: {
+    descriptionKey: 'models.i-i-s-probashest-гость.validations.данныеПаспорта.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('number', { allowString: true, allowBlank: true, integer: true }),
+    ],
+  },
   датаРождения: {
     descriptionKey: 'models.i-i-s-probashest-гость.validations.датаРождения.__caption__',
     validators: [
@@ -24,13 +31,6 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-probashest-гость.validations.почта.__caption__',
     validators: [
       validator('ds-error'),
-    ],
-  },
-  серНомПаспорта: {
-    descriptionKey: 'models.i-i-s-probashest-гость.validations.серНомПаспорта.__caption__',
-    validators: [
-      validator('ds-error'),
-      validator('number', { allowString: true, allowBlank: true, integer: true }),
     ],
   },
   телефон: {
@@ -52,7 +52,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ГостьE', 'i-i-s-probashest-гость', {
     фИО: attr('ФИО', { index: 0 }),
     датаРождения: attr('Дата рождения', { index: 1 }),
-    серНомПаспорта: attr('Сер ном паспорта', { index: 2 }),
+    данныеПаспорта: attr('Данные паспорта', { index: 2 }),
     телефон: attr('Телефон', { index: 3 }),
     почта: attr('Почта', { index: 4 })
   });
@@ -60,7 +60,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ГостьL', 'i-i-s-probashest-гость', {
     фИО: attr('ФИО', { index: 0 }),
     датаРождения: attr('Дата рождения', { index: 1 }),
-    серНомПаспорта: attr('Сер ном паспорта', { index: 2 }),
+    данныеПаспорта: attr('Данные паспорта', { index: 2 }),
     телефон: attr('Телефон', { index: 3 }),
     почта: attr('Почта', { index: 4 })
   });

@@ -4,63 +4,6 @@
   "items": [
     {
       "link": null,
-      "menuName": "probashest",
-      "caption": "Probashest",
-      "title": "Probashest",
-      "children": [
-        {
-          "link": "i-i-s-probashest-сотрудник-l",
-          "menuName": null,
-          "caption": "Сотрудник",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-карты-l",
-          "menuName": null,
-          "caption": "Карты",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-комнаты-l",
-          "menuName": null,
-          "caption": "Комнаты",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-док-регист-карты-l",
-          "menuName": null,
-          "caption": "Док регист карты",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-док-рег-входа-l",
-          "menuName": null,
-          "caption": "Док рег входа",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-должности-l",
-          "menuName": null,
-          "caption": "Должности",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-probashest-гость-l",
-          "menuName": null,
-          "caption": "Гость",
-          "title": "",
-          "children": null
-        }
-      ]
-    },
-    {
-      "link": null,
       "menuName": "клиенты",
       "caption": "Клиенты",
       "title": "Клиенты",

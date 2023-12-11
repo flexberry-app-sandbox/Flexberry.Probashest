@@ -7,6 +7,15 @@
   "parentClassName": null,
   "attrs": [
     {
+      "name": "данныеПаспорта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
       "name": "датаРождения",
       "type": "date",
       "flexberryType": "DateTime",
@@ -19,15 +28,6 @@
       "name": "почта",
       "type": "string",
       "flexberryType": "string",
-      "notNull": false,
-      "defaultValue": "",
-      "stored": true,
-      "ordered": false
-    },
-    {
-      "name": "серНомПаспорта",
-      "type": "number",
-      "flexberryType": "int",
       "notNull": false,
       "defaultValue": "",
       "stored": true,
@@ -72,8 +72,8 @@
           "index": 1
         },
         {
-          "name": "серНомПаспорта",
-          "caption": "Сер ном паспорта",
+          "name": "данныеПаспорта",
+          "caption": "Данные паспорта",
           "hidden": false,
           "index": 2
         },
@@ -110,8 +110,8 @@
           "index": 1
         },
         {
-          "name": "серНомПаспорта",
-          "caption": "Сер ном паспорта",
+          "name": "данныеПаспорта",
+          "caption": "Данные паспорта",
           "hidden": false,
           "index": 2
         },

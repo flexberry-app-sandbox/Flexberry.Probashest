@@ -22,14 +22,14 @@ public class Gost {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
+    @Column(name = "ДанныеПаспорта")
+    private Integer данныепаспорта;
+
     @Column(name = "ФИО")
     private String фио;
 
     @Column(name = "ДатаРождения")
     private Date датарождения;
-
-    @Column(name = "СерНомПаспорта")
-    private Integer серномпаспорта;
 
     @Column(name = "Телефон")
     private Integer телефон;
@@ -50,6 +50,14 @@ public class Gost {
         return primarykey;
     }
 
+    public Integer getДанныеПаспорта() {
+      return данныепаспорта;
+    }
+
+    public void setДанныеПаспорта(Integer данныепаспорта) {
+      this.данныепаспорта = данныепаспорта;
+    }
+
     public String getФИО() {
       return фио;
     }
@@ -64,14 +72,6 @@ public class Gost {
 
     public void setДатаРождения(Date датарождения) {
       this.датарождения = датарождения;
-    }
-
-    public Integer getСерНомПаспорта() {
-      return серномпаспорта;
-    }
-
-    public void setСерНомПаспорта(Integer серномпаспорта) {
-      this.серномпаспорта = серномпаспорта;
     }
 
     public Integer getТелефон() {
