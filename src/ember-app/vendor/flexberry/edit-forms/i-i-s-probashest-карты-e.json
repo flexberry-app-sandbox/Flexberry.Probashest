@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Карты",
+  "name": "IISProbashestКартыE",
+  "className": "КартыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-карты",
+      "modelProjection": "КартыE"
+    }
+  ]
+}

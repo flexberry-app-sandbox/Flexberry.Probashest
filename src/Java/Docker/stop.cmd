@@ -1,0 +1,1 @@
+docker-compose -p probashest-java down

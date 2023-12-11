@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probashest-комнаты-e",
+  "editForm": "i-i-s-probashest-комнаты-e",
+  "external": false,
+  "caption": "Комнаты",
+  "name": "IISProbashestКомнатыL",
+  "className": "КомнатыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-комнаты",
+      "modelProjection": "КомнатыL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probashest-док-регист-карты-e",
+  "editForm": "i-i-s-probashest-док-регист-карты-e",
+  "external": false,
+  "caption": "Док регист карты",
+  "name": "IISProbashestДокРегистКартыL",
+  "className": "ДокРегистКартыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-док-регист-карты",
+      "modelProjection": "ДокРегистКартыL"
+    }
+  ]
+}

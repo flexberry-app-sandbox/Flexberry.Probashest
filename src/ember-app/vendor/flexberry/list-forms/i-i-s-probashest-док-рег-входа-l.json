@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probashest-док-рег-входа-e",
+  "editForm": "i-i-s-probashest-док-рег-входа-e",
+  "external": false,
+  "caption": "Док рег входа",
+  "name": "IISProbashestДокРегВходаL",
+  "className": "ДокРегВходаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-док-рег-входа",
+      "modelProjection": "ДокРегВходаL"
+    }
+  ]
+}

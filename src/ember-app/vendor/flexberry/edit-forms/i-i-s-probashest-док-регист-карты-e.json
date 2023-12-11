@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Гость",
+      "projection": "ГостьL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Комнаты",
+      "projection": "КомнатыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Карты",
+      "projection": "КартыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Док регист карты",
+  "name": "IISProbashestДокРегистКартыE",
+  "className": "ДокРегистКартыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-док-регист-карты",
+      "modelProjection": "ДокРегистКартыE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Комнаты",
+  "name": "IISProbashestКомнатыE",
+  "className": "КомнатыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probashest-комнаты",
+      "modelProjection": "КомнатыE"
+    }
+  ]
+}

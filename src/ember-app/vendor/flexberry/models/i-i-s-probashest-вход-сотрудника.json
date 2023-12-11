@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISProbashestВходСотрудника",
+  "modelName": "i-i-s-probashest-вход-сотрудника",
+  "className": "ВходСотрудника",
+  "nameSpace": "IIS.Probashest",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-probashest-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докРегВхода",
+      "relatedTo": "i-i-s-probashest-док-рег-входа",
+      "inverse": "входСотрудника"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВходСотрудникаE",
+      "modelName": "i-i-s-probashest-вход-сотрудника",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-probashest-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
