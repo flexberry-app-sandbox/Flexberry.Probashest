@@ -39,7 +39,7 @@ export let defineProjections = function (modelClass) {
     гость: belongsTo('i-i-s-probashest-гость', 'Гость', {
       фИО: attr('ФИО', { index: 1, hidden: true })
     }, { index: 0, displayMemberPath: 'фИО' }),
-    карты: belongsTo('i-i-s-probashest-карты', 'Карты', {
+    карты: belongsTo('i-i-s-probashest-карты', 'Карта', {
       кодКарты: attr('Код карты', { index: 3, hidden: true })
     }, { index: 2, displayMemberPath: 'кодКарты' })
   });

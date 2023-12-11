@@ -73,7 +73,7 @@
           ],
           "index": 2,
           "type": "standard",
-          "caption": "Карты",
+          "caption": "Карта",
           "name": "карты",
           "relatedTo": "i-i-s-probashest-карты",
           "inverse": null

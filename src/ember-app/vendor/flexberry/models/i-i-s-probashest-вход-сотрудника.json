@@ -28,51 +28,7 @@
       "name": "ВходСотрудникаE",
       "modelName": "i-i-s-probashest-вход-сотрудника",
       "attrs": [],
-      "belongsTo": [
-        {
-          "lookupValue": "ФИО",
-          "lookupValueField": "фИО",
-          "relationName": "Сотрудник",
-          "belongsTo": [
-            {
-              "lookupValue": null,
-              "lookupValueField": null,
-              "relationName": "Сотрудник.Должности",
-              "belongsTo": [],
-              "hidden": false,
-              "attrs": [
-                {
-                  "name": "должность",
-                  "caption": "Должность",
-                  "hidden": false,
-                  "index": 2
-                }
-              ],
-              "index": -1,
-              "type": null,
-              "caption": "",
-              "name": "должности",
-              "relatedTo": "i-i-s-probashest-должности",
-              "inverse": null
-            }
-          ],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фИО",
-              "caption": "ФИО",
-              "hidden": true,
-              "index": 1
-            }
-          ],
-          "index": 0,
-          "type": "standard",
-          "caption": "Сотрудник",
-          "name": "сотрудник",
-          "relatedTo": "i-i-s-probashest-сотрудник",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     }
   ],
