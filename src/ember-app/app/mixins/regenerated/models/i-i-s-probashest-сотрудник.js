@@ -63,12 +63,12 @@ export let defineProjections = function (modelClass) {
     должности: belongsTo('i-i-s-probashest-должности', 'Должности', {
       должность: attr('Должность', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'должность' }),
-    датаРождения: attr('Дата рождения', { index: 4 }),
-    данныеПаспорта: attr('Данные паспорта', { index: 5 }),
-    телефон: attr('Телефон', { index: 6 }),
     карты: belongsTo('i-i-s-probashest-карты', 'Карта', {
-
-    }, { index: 3, displayMemberPath: 'код карты' })
+      кодКарты: attr('Код карты', { index: 4, hidden: true })
+    }, { index: 3, displayMemberPath: 'код карты' }),
+    датаРождения: attr('Дата рождения', { index: 5 }),
+    данныеПаспорта: attr('Данные паспорта', { index: 6 }),
+    телефон: attr('Телефон', { index: 7 })
   });
 
   modelClass.defineProjection('СотрудникL', 'i-i-s-probashest-сотрудник', {

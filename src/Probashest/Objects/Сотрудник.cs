@@ -33,10 +33,12 @@ namespace IIS.Probashest
             "Должности as \'Должности\'",
             "Должности.Должность as \'Должность\'",
             "Карты as \'Карта\'",
+            "Карты.КодКарты as \'Код карты\'",
             "ДатаРождения as \'Дата рождения\'",
             "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'"}, Hidden=new string[] {
-            "Должности.Должность"})]
+            "Должности.Должность",
+            "Карты.КодКарты"})]
     [MasterViewDefineAttribute("СотрудникE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Должность")]
     [MasterViewDefineAttribute("СотрудникE", "Карты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Код карты")]
     [View("СотрудникL", new string[] {
