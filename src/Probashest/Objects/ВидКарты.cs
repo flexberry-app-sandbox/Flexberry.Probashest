@@ -21,7 +21,7 @@ namespace IIS.Probashest
 
 
     /// <summary>
-    /// Вид карты.
+    /// ВидКарты.
     /// </summary>
     // *** Start programmer edit section *** (ВидКарты CustomAttributes)
 
