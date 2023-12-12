@@ -30,11 +30,8 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ВходСотрудникаE', 'i-i-s-probashest-вход-сотрудника', {
     сотрудник: belongsTo('i-i-s-probashest-сотрудник', 'Сотрудник', {
       фИО: attr('ФИО', { index: 1, hidden: true }),
-      должности: belongsTo('i-i-s-probashest-должности', '', {
-        должность: attr('', { index: 2 })
-      }, { index: -1, hidden: true }),
       карты: belongsTo('i-i-s-probashest-карты', '', {
-        кодКарты: attr('', { index: 3 })
+        кодКарты: attr('', { index: 2 })
       }, { index: -1, hidden: true })
     }, { index: 0, displayMemberPath: 'фИО' })
   });
