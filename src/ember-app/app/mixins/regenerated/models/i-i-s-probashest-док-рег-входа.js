@@ -57,7 +57,15 @@ export let defineProjections = function (modelClass) {
       }, { index: 2, displayMemberPath: 'кодКарты' })
     }),
     входСотрудника: hasMany('i-i-s-probashest-вход-сотрудника', 'Вход сотрудника', {
-      
+      сотрудник: belongsTo('i-i-s-probashest-сотрудник', 'Сотрудник', {
+        фИО: attr('ФИО', { index: 1, hidden: true }),
+        должности: belongsTo('i-i-s-probashest-должности', '', {
+          должность: attr('', { index: 2 })
+        }, { index: -1, hidden: true }),
+        карты: belongsTo('i-i-s-probashest-карты', '', {
+          кодКарты: attr('', { index: 3 })
+        }, { index: -1, hidden: true })
+      }, { index: 0, displayMemberPath: 'фИО' })
     })
   });
 
