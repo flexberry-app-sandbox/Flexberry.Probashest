@@ -9,7 +9,8 @@ export let Model = Mixin.create({
   датаРождения: DS.attr('date'),
   телефон: DS.attr('number'),
   фИО: DS.attr('string'),
-  должности: DS.belongsTo('i-i-s-probashest-должности', { inverse: null, async: false })
+  должности: DS.belongsTo('i-i-s-probashest-должности', { inverse: null, async: false }),
+  карты: DS.belongsTo('i-i-s-probashest-карты', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -47,6 +48,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  карты: {
+    descriptionKey: 'models.i-i-s-probashest-сотрудник.validations.карты.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -55,9 +63,12 @@ export let defineProjections = function (modelClass) {
     должности: belongsTo('i-i-s-probashest-должности', 'Должности', {
       должность: attr('Должность', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'должность' }),
-    датаРождения: attr('Дата рождения', { index: 3 }),
-    данныеПаспорта: attr('Данные паспорта', { index: 4 }),
-    телефон: attr('Телефон', { index: 5 })
+    карты: belongsTo('i-i-s-probashest-карты', 'Карта', {
+      кодКарты: attr('Код карты', { index: 4 })
+    }, { index: 3, displayMemberPath: 'код карты' }),
+    датаРождения: attr('Дата рождения', { index: 5 }),
+    данныеПаспорта: attr('Данные паспорта', { index: 6 }),
+    телефон: attr('Телефон', { index: 7 })
   });
 
   modelClass.defineProjection('СотрудникL', 'i-i-s-probashest-сотрудник', {
@@ -65,8 +76,11 @@ export let defineProjections = function (modelClass) {
     должности: belongsTo('i-i-s-probashest-должности', 'Должность', {
       должность: attr('Должность', { index: 1 })
     }, { index: -1, hidden: true }),
-    датаРождения: attr('Дата рождения', { index: 2 }),
-    данныеПаспорта: attr('Данные паспорта', { index: 3 }),
-    телефон: attr('Телефон', { index: 4 })
+    карты: belongsTo('i-i-s-probashest-карты', 'Карта', {
+      кодКарты: attr('Карта', { index: 2 })
+    }, { index: -1, hidden: true }),
+    датаРождения: attr('Дата рождения', { index: 3 }),
+    данныеПаспорта: attr('Данные паспорта', { index: 4 }),
+    телефон: attr('Телефон', { index: 5 })
   });
 };

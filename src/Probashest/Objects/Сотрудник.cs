@@ -32,14 +32,18 @@ namespace IIS.Probashest
             "ФИО as \'ФИО\'",
             "Должности as \'Должности\'",
             "Должности.Должность as \'Должность\'",
+            "Карты as \'Карта\'",
+            "Карты.КодКарты as \'Код карты\'",
             "ДатаРождения as \'Дата рождения\'",
             "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'"}, Hidden=new string[] {
             "Должности.Должность"})]
     [MasterViewDefineAttribute("СотрудникE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Должность")]
+    [MasterViewDefineAttribute("СотрудникE", "Карты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Код карты")]
     [View("СотрудникL", new string[] {
             "ФИО as \'ФИО\'",
             "Должности.Должность as \'Должность\'",
+            "Карты.КодКарты as \'Карта\'",
             "ДатаРождения as \'Дата рождения\'",
             "ДанныеПаспорта as \'Данные паспорта\'",
             "Телефон as \'Телефон\'"})]
@@ -53,6 +57,8 @@ namespace IIS.Probashest
         private int fДанныеПаспорта;
         
         private int fТелефон;
+        
+        private IIS.Probashest.Карты fКарты;
         
         private IIS.Probashest.Должности fДолжности;
         
@@ -217,6 +223,40 @@ namespace IIS.Probashest
                 // *** Start programmer edit section *** (Сотрудник.Должности Set end)
 
                 // *** End programmer edit section *** (Сотрудник.Должности Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Сотрудник.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.Карты CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.Карты CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Карты"})]
+        [NotNull()]
+        public virtual IIS.Probashest.Карты Карты
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.Карты Get start)
+
+                // *** End programmer edit section *** (Сотрудник.Карты Get start)
+                IIS.Probashest.Карты result = this.fКарты;
+                // *** Start programmer edit section *** (Сотрудник.Карты Get end)
+
+                // *** End programmer edit section *** (Сотрудник.Карты Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.Карты Set start)
+
+                // *** End programmer edit section *** (Сотрудник.Карты Set start)
+                this.fКарты = value;
+                // *** Start programmer edit section *** (Сотрудник.Карты Set end)
+
+                // *** End programmer edit section *** (Сотрудник.Карты Set end)
             }
         }
         

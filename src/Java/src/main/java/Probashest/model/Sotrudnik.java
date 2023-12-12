@@ -36,6 +36,16 @@ public class Sotrudnik {
     private Integer телефон;
 
     @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Karty")
+    @Convert("Karty")
+    @Column(name = "Карты", length = 16, unique = true, nullable = false)
+    private UUID _kartyid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Karty", insertable = false, updatable = false)
+    private Karty karty;
+
+    @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Dolzhnosti")
     @Convert("Dolzhnosti")
     @Column(name = "Должности", length = 16, unique = true, nullable = false)
