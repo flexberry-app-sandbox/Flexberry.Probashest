@@ -54,6 +54,27 @@
               "name": "должности",
               "relatedTo": "i-i-s-probashest-должности",
               "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудник.Карты",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "кодКарты",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "карты",
+              "relatedTo": "i-i-s-probashest-карты",
+              "inverse": null
             }
           ],
           "hidden": false,
