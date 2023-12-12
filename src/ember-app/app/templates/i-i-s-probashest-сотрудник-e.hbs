@@ -71,16 +71,6 @@
     {{flexberry-validationmessage error=(v-get validationModel "карты" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.карты.кодКарты
-      class=(if (v-get validationModel.карты "кодКарты" "isInvalid") "error")
-      label=(t "forms.i-i-s-probashest-сотрудник-e.карты.кодКарты-caption")
-      data-test-i-i-s-probashest-сотрудник-e-карты-кодКарты=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.карты "кодКарты" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-probashest-сотрудник-e.датаРождения-caption"}}</label>
     {{flexberry-simpledatetime
       type="date"

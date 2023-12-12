@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-probashest-гость-l',
             caption: i18n.t('forms.application.sitemap.клиенты.i-i-s-probashest-гость-l.caption'),
             title: i18n.t('forms.application.sitemap.клиенты.i-i-s-probashest-гость-l.title'),
-            icon: 'tasks',
+            icon: 'edit',
             children: null
           }]
         }, {
@@ -34,24 +34,25 @@ export default Controller.extend({
             link: 'i-i-s-probashest-карты-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-карты-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-карты-l.title'),
-            icon: 'list',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-probashest-должности-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-должности-l.title'),
-            icon: 'tags',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-probashest-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-сотрудник-l.title'),
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-probashest-комнаты-l',
             caption: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-комнаты-l.caption'),
             title: i18n.t('forms.application.sitemap.отель.i-i-s-probashest-комнаты-l.title'),
-            icon: 'briefcase',
+            icon: 'suitcase',
             children: null
           }, {
             link: null,
@@ -67,7 +68,7 @@ export default Controller.extend({
               link: 'i-i-s-probashest-док-регист-карты-l',
               caption: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-регист-карты-l.caption'),
               title: i18n.t('forms.application.sitemap.отель.документы.i-i-s-probashest-док-регист-карты-l.title'),
-              icon: 'archive',
+              icon: 'file',
               children: null
             }]
           }]
